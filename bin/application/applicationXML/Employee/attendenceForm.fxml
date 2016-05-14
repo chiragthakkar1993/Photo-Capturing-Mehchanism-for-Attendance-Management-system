@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="546.0" style="-fx-background-color: #EBF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEmpController">
+   <children>
+      <Pane fx:id="paneUpload" layoutX="14.0" layoutY="14.0" prefHeight="188.0" prefWidth="169.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="imgUpload" fitHeight="188.0" fitWidth="176.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TextField fx:id="txtFirstName" layoutX="310.0" layoutY="13.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtMiddleName" layoutX="310.0" layoutY="58.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtLastName" layoutX="310.0" layoutY="103.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtEmail" layoutX="310.0" layoutY="145.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtMobile" layoutX="310.0" layoutY="189.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextArea fx:id="txtAddress" layoutX="310.0" layoutY="233.0" prefHeight="62.0" prefWidth="191.0" />
+      <TextArea fx:id="txtQualification" layoutX="310.0" layoutY="310.0" prefHeight="62.0" prefWidth="191.0" />
+      <ComboBox fx:id="cmbProfession" layoutX="312.0" layoutY="389.0" prefHeight="25.0" prefWidth="132.0" />
+      <Button fx:id="btnUpload" layoutX="60.0" layoutY="229.0" mnemonicParsing="false" style="-fx-background-color: #0066FF;" text="Upload Photo" textFill="WHITE" />
+      <Button fx:id="btnEnroll" layoutX="61.0" layoutY="496.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #0066FF;" text="Enroll" textFill="#fcfcfc" />
+      <Button fx:id="btnClear" layoutX="229.0" layoutY="496.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #0066FF;" text="Clear" textFill="#f8f8f8" />
+      <Button fx:id="btnCancel" layoutX="400.0" layoutY="496.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #0066FF;" text="Cancel" textFill="#fffdfd" />
+      <Label layoutX="208.0" layoutY="15.0" prefHeight="20.0" prefWidth="81.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="60.0" prefHeight="20.0" prefWidth="102.0" text="Middle Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="105.0" prefHeight="20.0" prefWidth="81.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="148.0" prefHeight="20.0" prefWidth="81.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="192.0" prefHeight="20.0" prefWidth="81.0" text="Mobile No">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="233.0" prefHeight="20.0" prefWidth="81.0" text="Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="310.0" prefHeight="20.0" prefWidth="102.0" text="Qualifications">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="392.0" prefHeight="20.0" prefWidth="102.0" text="Profession">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

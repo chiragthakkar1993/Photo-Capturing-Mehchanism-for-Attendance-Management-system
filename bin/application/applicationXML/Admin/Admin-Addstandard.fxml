@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="728.0" style="-fx-background-color: #EDF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddStandardController">
+   <children>
+      <Label layoutX="129.0" layoutY="119.0" text="Standard-Id">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtstdid" fx:id="txtStdId" layoutX="250.0" layoutY="117.0" promptText="Id">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </TextField>
+      <TextField id="txtstdname" fx:id="txtStdName" layoutX="250.0" layoutY="164.0" promptText="Standard">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="129.0" layoutY="168.0" text="Standard">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Button id="btnadd" fx:id="btnAdd" layoutX="186.0" layoutY="220.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Button>
+      <Button id="btncancel" fx:id="btnClear" layoutX="272.0" layoutY="220.0" mnemonicParsing="false" text="Clear">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

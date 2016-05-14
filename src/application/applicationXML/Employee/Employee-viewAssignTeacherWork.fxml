@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" style="-fx-background-color: #EDF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ViewAssignedWorkForTeacherController">
+   <children>
+      <TableView fx:id="tableViewAssignWork" focusTraversable="false" layoutX="1.0" layoutY="58.0" prefHeight="344.0" prefWidth="745.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="columnStd" prefWidth="129.0" text="Standard" />
+          <TableColumn fx:id="columnSub" prefWidth="291.0" text="Subject" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="249.0" prefHeight="40.0" prefWidth="258.0" text="ASSIGNED WORK" textFill="#1341fc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

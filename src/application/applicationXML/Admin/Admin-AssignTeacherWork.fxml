@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="747.0" style="-fx-background-color: #EDF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AssignTeacherWorkController">
+   <children>
+      <ComboBox fx:id="comboTeacher" layoutX="274.0" layoutY="70.0" prefWidth="150.0" promptText="Select Teacher" />
+      <ComboBox fx:id="comboStd" layoutX="274.0" layoutY="111.0" prefWidth="150.0" promptText="Select Standard" />
+      <ComboBox fx:id="comboSubject" layoutX="274.0" layoutY="149.0" prefWidth="150.0" promptText="Select Subject" />
+      <Button fx:id="btnAssign" layoutX="156.0" layoutY="206.0" mnemonicParsing="false" text="Assign">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="255.0" layoutY="206.0" mnemonicParsing="false" text="Clear">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="155.0" layoutY="70.0" text="Teacher Name">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="113.0" text="Standard">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="151.0" text="Subject">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="34.0" text="Enroll Id">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEnrollId" layoutX="278.0" layoutY="30.0" prefHeight="30.0" prefWidth="150.0" text="Label" textFill="#2016dd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

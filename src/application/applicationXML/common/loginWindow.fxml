@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="400.0" style="-fx-background-color: EBF4F5; -fx-border-color: A9DDE1; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <Pane layoutY="29.0" prefHeight="46.0" prefWidth="452.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="206.0" layoutX="105.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtUname" focusTraversable="false" layoutX="70.0" layoutY="102.0" prefHeight="46.0" prefWidth="310.0" promptText="Username">
+         
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="txtPwd" focusTraversable="false" layoutX="70.0" layoutY="161.0" prefHeight="46.0" prefWidth="310.0" promptText="Password">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </PasswordField>
+      <Button fx:id="btnLogin" layoutX="73.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);" text="Login" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="167.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);" text="Cancel" textFill="#fffefe">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="recoverPwd" layoutX="258.0" layoutY="226.0" prefHeight="23.0" prefWidth="126.0" text="Recover password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="14.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="14.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/password.Png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

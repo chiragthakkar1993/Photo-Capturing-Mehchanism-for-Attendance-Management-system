@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="647.0" style="-fx-border-color: linear-gradient( EBF4F5,A9DDE1); -fx-border-width: 4px; -fx-border-radius: 2px; -fx-background-color: #EBF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AttendenceController">
+   <children>
+      <Pane fx:id="DateTimePane" layoutY="8.0" prefHeight="65.0" prefWidth="662.0" style="-fx-background-color: linear-gradient(#3A86F9, EBF4F5); -fx-border-color: #3E89BC; -fx-border-width: 2px;" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-11.0">
+         <children>
+            <Label fx:id="lblDate" layoutX="14.0" prefHeight="62.0" prefWidth="133.0" text="30/10/2014">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="461.0" layoutY="2.0" prefHeight="62.0" prefWidth="189.0" text="16:44">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="inOutPane" layoutX="7.0" layoutY="82.0" prefHeight="39.0" prefWidth="167.0" style="-fx-border-color: #3E89BC; -fx-border-width: 1px;">
+         <children>
+            <RadioButton fx:id="pressIn" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" selected="true" text="In">
+               <toggleGroup>
+                  <ToggleGroup fx:id="press" />
+               </toggleGroup>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="pressOut" layoutX="80.0" layoutY="7.0" mnemonicParsing="false" text="Out" toggleGroup="$press">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Label layoutX="327.0" layoutY="89.0" prefHeight="25.0" prefWidth="120.0" text="Enroll Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEnroll" editable="false" layoutX="464.0" layoutY="88.0" style="-fx-background-color: E4E5E6; -fx-border-color: black; -fx-border-radius: 5px;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Pane fx:id="middlePane" layoutX="6.0" layoutY="130.0" prefHeight="231.0" prefWidth="637.0" style="-fx-border-color: #3E89BC; -fx-border-width: 1px;">
+         <children>
+            <TextArea fx:id="commentBox" layoutX="258.0" layoutY="127.0" prefHeight="94.0" prefWidth="376.0" promptText="Comments" />
+            <Pane fx:id="NamePane" layoutX="244.0" layoutY="5.0" prefHeight="109.0" prefWidth="390.0" />
+            <Label fx:id="pressMode" layoutX="403.0" layoutY="82.0" text="Out">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="pressDate" layoutX="532.0" layoutY="55.0" prefHeight="25.0" prefWidth="92.0" text="30/10/2014">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="pressTime" layoutX="401.0" layoutY="55.0" prefHeight="25.0" prefWidth="98.0" text="16:44">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblName" layoutX="401.0" layoutY="30.0" text="Chirag Thakkar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="269.0" layoutY="75.0" prefHeight="39.0" prefWidth="98.0" text="Press Mode">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="269.0" layoutY="48.0" prefHeight="39.0" prefWidth="98.0" text="Press Time">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="269.0" layoutY="23.0" prefHeight="39.0" prefWidth="84.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Pane fx:id="webcamePane" layoutX="14.0" layoutY="14.0" prefHeight="159.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="imgview1" fitHeight="159.0" fitWidth="209.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Button fx:id="btnRetake" layoutX="72.0" layoutY="192.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #0066FF;" text="RETAKE" textFill="#fcf9f9" />
+         </children>
+      </Pane>
+      <Button fx:id="btnMakeAttendence" layoutX="188.0" layoutY="398.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #0066FF;" text="Make Attendance" textFill="#fcf9f9" />
+      <Button fx:id="btnCancel" layoutX="341.0" layoutY="398.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: #0066FF;" text="Cancel" textFill="#fcf9f9" />
+   </children>
+</AnchorPane>

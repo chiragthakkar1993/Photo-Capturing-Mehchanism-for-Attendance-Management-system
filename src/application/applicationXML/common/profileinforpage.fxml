@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="containerpanel" layoutX="14.0" prefHeight="198.0" prefWidth="568.0" stylesheets="@container.css">
+         <children>
+            <ImageView id="profileimage" fitHeight="150.0" fitWidth="200.0" layoutX="392.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/nice%20thought/539967_523467301001017_971363220_n.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="45.0" text="Enroll-ID">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Label>
+            <Label id="lblname" layoutX="159.0" layoutY="75.0" prefHeight="24.0" prefWidth="220.0" text="Name here">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label id="lblenrollid" layoutX="172.0" layoutY="43.0" prefHeight="24.0" prefWidth="220.0" text="Enroll-ID here ">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="76.0" text="Name">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="109.0" text="Designation">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label id="lbldesignation" layoutX="172.0" layoutY="109.0" prefHeight="24.0" prefWidth="220.0" text="designation goes here">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="753.0" style="-fx-background-color: #EDF4F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddWorkForEmployeeController">
+   <children>
+      <Label layoutX="212.0" layoutY="14.0" prefHeight="40.0" prefWidth="163.0" text="ADD WORK" textFill="#1341fc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="140.0" text="Subjects:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="112.0" text="Standard:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddWork" layoutX="187.0" layoutY="318.0" mnemonicParsing="false" text="Add Work">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboStd" layoutX="272.0" layoutY="114.0" prefWidth="150.0" promptText="select the standard" />
+      <ComboBox fx:id="comboSubject" layoutX="272.0" layoutY="145.0" prefWidth="150.0" promptText="select the subject" />
+      <Button fx:id="btnCancel" layoutX="300.0" layoutY="318.0" mnemonicParsing="false" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="149.0" layoutY="176.0" text="To-do :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtToDo" layoutX="272.0" layoutY="178.0" prefHeight="79.0" prefWidth="210.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="151.0" layoutY="264.0" text="Work-Date:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateWorkDate" layoutX="272.0" layoutY="266.0" promptText="date " />
+      <Label id="lblcreateddate" fx:id="lblDate" layoutX="273.0" layoutY="83.0" prefHeight="28.0" prefWidth="150.0" text="15/11/2014">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label id="lblcreateddate" layoutX="149.0" layoutY="84.0" prefHeight="28.0" prefWidth="50.0" text="Date:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
