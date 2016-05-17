@@ -27,3 +27,7 @@ This Project is a eclipse project which can be imported directly in eclipse.
 to Run this project please follow the below given steps:
 - run RootWindow.java file 
 - enter the login crdentials (admin and user modules both have different credentials)
+
+**Note:-** for login credentials please find 
+    
+
