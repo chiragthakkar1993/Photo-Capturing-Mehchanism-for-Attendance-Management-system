@@ -28,6 +28,7 @@ to Run this project please follow the below given steps:
 - run RootWindow.java file 
 - enter the login crdentials (admin and user modules both have different credentials)
 
-**Note:-** for login credentials please find 
+**Note:-** for login credentials please find Login Credentials comments in the src/application/controller/LoginController.Java file.
+
     
 
