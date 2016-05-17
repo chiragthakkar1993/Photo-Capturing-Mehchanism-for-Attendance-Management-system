@@ -1,3 +1,14 @@
+/* Login Credentials */
+/*  Admin Login
+*   	Username:- admin
+*	password:- admin123
+*
+*   User Login
+*   	Username:- chirag
+*	password:- chirag123
+*
+*/
+
 package application.controller;
 
 import java.io.IOException;
@@ -75,8 +86,8 @@ public class LoginController implements Initializable {
 									&& txtPwd.getText().equals("admin123")) {
 								type = "admin";
 							} else if (txtUname.getText().equals(
-									"chirag.thakkar1993@gmail.com")
-									&& txtPwd.getText().equals("chirag")) {
+									"chirag")
+									&& txtPwd.getText().equals("chirag123")) {
 								type = "employee";
 							} else {
 								type = null;
